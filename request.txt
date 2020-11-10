@@ -1,0 +1,20 @@
+//Registration curl request in Postman
+
+curl --location --request POST 'localhost:3000/register' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "fullname": "Jyothi Sri Guntu",
+    "username": "jyothisri",
+    "password": "test123"
+}'
+
+//Login curl request in Postman
+curl --location --request POST 'localhost:3000/login' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "username": "jyothisri",
+    "password": "test123"
+}'
+
+//Product listing curl request in Postman
+curl --location --request GET 'localhost:3000/products'
